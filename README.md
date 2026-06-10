@@ -1,55 +1,53 @@
-<h2 align="left">Hi! My name is Vishnu and i'm a Web Developer</h2>
+<div align="center">
+
+<br>
+
+# Vishnu Datta
+
+**CS Student @ IIIT Sri City**
+
+Currently interning as an SDE at Soundverse AI &nbsp;·&nbsp; Building full-stack apps, AI products & developer tools.
+
+<br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vishnudattagb/)&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/VishnuDatta510)&nbsp;
+[![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116.svg?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/u/Vishno-Way/)
+
+</div>
+
+---
+
+### Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,vite,html,css&theme=dark" />
+</p>
+
+### Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,prisma&theme=dark" />
+</p>
+
+### Databases
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,firebase,supabase&theme=dark" />
+</p>
+
+### Tools & Cloud
+
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,git,github,azure,postman&theme=dark" />
+</p>
+
+---
 
 <div align="center">
-  <img height="150" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  />
-</div>
 
-###
+![](https://komarev.com/ghpvc/?username=VishnuDatta510&style=flat-square&color=grey&label=profile+views)
 
-
-###
-
-<h3 align="left">👩‍💻  About Me</h3>
-
-###
-
-<p align="left">I'm Vishnu <br><br>- 🔭 I’m a Student @ IIIT Sricity<br>- 📚 I'm currently learning React + Next.JS and Ofc DSA<br>- ⚡ In my free time I fe!n for Caffeine</p>
-
-###
-
-<h3 align="left">🛠 Language and tools</h3>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="55" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg" height="50" alt="reactBootStrap logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" height="50" alt="Next.JS logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" height="50" alt="Java logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" height="50" alt="Node.JS logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" height="50" alt="MongoDB logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="50" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" height="50" alt="Redux logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" height="50" alt="TailWindCSS logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" height="50" alt="BootStrap logo"/>
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" height="50" alt="Postman logo"/>
-  <img width="12" />
+<br>
 
 </div>
-
