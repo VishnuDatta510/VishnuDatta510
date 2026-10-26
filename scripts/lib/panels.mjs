@@ -20,20 +20,38 @@ export const LINKS = [
   { key: "leetcode", label: "LeetCode", href: "https://leetcode.com/u/Vishno-Way/", icon: "leetcode" },
 ];
 
-/** One small SVG per link (an <img> inside an <a> is the only way to make an image clickable on GitHub). */
-export function renderLink(link, i, p) {
+// Rough label widths at 14.5px semi-bold, used to centre each icon + label pair inside its segment.
+const LABEL_W = { Portfolio: 62, LinkedIn: 58, GitHub: 50, LeetCode: 62 };
+const SEG_W = 190, SEG_H = 52;
+
+/**
+ * One segment of a four-part pill bar. Each segment is its own SVG because an <img> inside an <a> is the
+ * only way to make an image clickable on GitHub; placed side by side at their natural width they join
+ * into one continuous bar (rounded caps on the first and last, hairline dividers between).
+ */
+export function renderLink(link, i, p, count = LINKS.length) {
+  const first = i === 0, last = i === count - 1, r = SEG_H / 2 - 0.5;
+  const W = SEG_W;
+  const outline = first
+    ? `M${W} .5H${r + 0.5}A${r} ${r} 0 0 0 ${r + 0.5} ${SEG_H - 0.5}H${W}`
+    : last
+      ? `M0 .5H${W - r - 0.5}A${r} ${r} 0 0 1 ${W - r - 0.5} ${SEG_H - 0.5}H0`
+      : `M0 .5H${W}M0 ${SEG_H - 0.5}H${W}`;
+  const divider = first ? "" : `<path d="M.5 15V37" stroke="${p.line}"/>`;
+  const unit = 18 + 9 + LABEL_W[link.label];
+  const x0 = (W - unit) / 2;
   const glyph =
     link.icon === "web"
-      ? `<g fill="none" stroke="${p.ico}" stroke-width="1.6" stroke-linecap="round"><circle r="8"/><ellipse rx="3.6" ry="8"/><path d="M-8 0h16"/></g>`
-      : `<path transform="translate(-9 -9) scale(.75)" d="${IC[link.icon].p}" fill="${link.icon === "github" ? p.ico : p.ico}"/>`;
-  return `<svg ${SVG_NS} viewBox="0 0 200 48" role="img" aria-label="${link.label}">
+      ? `<g transform="translate(${x0 + 9} 26)" fill="none" stroke="${p.ico}" stroke-width="1.6" stroke-linecap="round"><circle r="8"/><ellipse rx="3.6" ry="8"/><path d="M-8 0h16"/></g>`
+      : `<path transform="translate(${x0} 17) scale(.75)" d="${IC[link.icon].p}" fill="${p.ico}"/>`;
+  return `<svg ${SVG_NS} width="${W}" height="${SEG_H}" viewBox="0 0 ${W} ${SEG_H}" role="img" aria-label="${link.label}">
 <style>text{font-family:${SANS};font-size:14.5px;font-weight:600;fill:${p.fg}}
-.u{stroke-dasharray:1;stroke-dashoffset:1;animation:u 1.2s cubic-bezier(.5,0,.2,1) ${0.3 + i * 0.12}s forwards}
-.i{opacity:0;animation:i .7s cubic-bezier(.2,.7,.2,1) ${0.2 + i * 0.12}s forwards}
-@keyframes u{to{stroke-dashoffset:0}}@keyframes i{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
-${RM(".u{animation:none;stroke-dashoffset:0}.i{opacity:1;animation:none}")}</style>
-<g class="i"><g transform="translate(46 22)">${glyph}</g><text x="64" y="27">${link.label}</text></g>
-<path class="u" pathLength="1" d="M30 40H170" stroke="${p.line}" stroke-linecap="round"/></svg>`;
+.o{opacity:0;animation:o .8s ease-out ${0.1 + i * 0.1}s forwards}
+.i{opacity:0;animation:i .7s cubic-bezier(.2,.7,.2,1) ${0.3 + i * 0.12}s forwards}
+@keyframes o{to{opacity:1}}@keyframes i{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+${RM(".o,.i{opacity:1;animation:none}")}</style>
+<g class="o"><path d="${outline}" fill="none" stroke="${p.line}"/>${divider}</g>
+<g class="i">${glyph}<text x="${x0 + 27}" y="31">${link.label}</text></g></svg>`;
 }
 
 const GROUPS = [
